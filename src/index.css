@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  background-color: #f5f5f5;
+  color: #320e3b;
+}
+
+.layout {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.inline-input,
+.inline-output {
+  display: inline-block;
+  color: #fa7921;
+}
+
+.inline-input {
+  color: #e55934;
+  border-bottom: 3px dotted #000;
+  cursor: pointer;
+  outline: 0;
+}
+
+.inline-input:focus {
+  border-bottom-color: #e55934;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    padding: 0 40px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text {
+    padding: 0 100px;
+    font-size: 48px;
+  }
+}
